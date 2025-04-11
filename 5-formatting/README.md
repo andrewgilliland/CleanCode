@@ -24,21 +24,39 @@ The names (plus directory structure) should let us know if we are in the right m
 
 ### Vertical Openness Between Concepts
 
-
+Group of lines represent a complete thought.
+Use blank lines separating functions, imports, package declarations, etc.
 
 ### Vertical Density
 
+Lines of code that are tightly related should appear vertically dense.
+Avoid extra useless space (and comments).
+
 ### Vertical Distance
+
+Concepts in your code that are related to each other should be relatively close.
+Vertical separation can be a measure of how important concept are to each other.
 
 #### Variable Declaration
 
+Variable declarations should be as close as possible to where they are used.
+
 #### Instance variables
+
+Declare instances variables at the top of the class.
 
 #### Dependent Functions
 
+If one function calls another, they should be close.
+The caller should be above the callee.
+
 #### Conceptual Affinity
 
+The stronger the affinity, the less vertical space.
+
 ### Vertical Ordering
+
+Function call dependencies point in a downward direction.
 
 ## Horizontal Formatting
 
@@ -54,16 +72,27 @@ With assignment statement, have a space between the left side and the right side
 // Bad
 $array=[1,2,3,4];
 
-// Good
+// Better
 $array = [4,5,6,7];
+
+// Better??
+$array = [8, 9, 10, 11];
 ```
 
-Since functions and arguments are closely, there are no spaces between the function name and opening parenthesis
+Since functions and arguments are closely, there are no spaces between the function name and opening parenthesis.
+But use a space between arguments to show they are different.
 
 ```php
+// Good
+public static double root1(double a, double b, double c) {
+    double determinant = determinant (a, b, c);
+    return (-b + Math.sqrt(determinant)) / (2*a);
+}
 ```
 
 ### Horizontal Alignment
+
+Horizontal alignment is not too useful, avoid it if you can.
 
 ### Indentation
 
@@ -129,9 +158,21 @@ class User
 
 You may be tempted to not indent with short if statements, while loops, or functions. Don't do it. Just don't.
 
+```javascript
+// Bad
+const fetchThing = () => { return thing; }
+```
+
+```javascript
+// Better
+const fetchThing = () => {
+    return thing;
+}
+```
+
 ### Dummy Scopes
 
-Try to avoid this
+Try to avoid these if possible...
 
 ## Team Rules
 
