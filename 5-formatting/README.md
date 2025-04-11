@@ -26,7 +26,26 @@
 
 ## Horizontal Formatting
 
-### Horizontal Opennes and Density
+Keep your lines short. Keep them to a max of length of 100 to 120 characters. Your should never have to scroll to the right.
+
+### Horizontal Openness and Density
+
+Horizontal white space can be used for associating things that strongly related.
+
+With assignment statement, have a space between the left side and the right side.
+
+```php
+// bad
+$array=[1,2,3,4];
+
+// good
+$array = [4,5,6,7];
+```
+
+Since functions and arguments are closely, there are no spaces between the function name and opening parenthesis
+
+```php
+```
 
 ### Horizontal Alignment
 
@@ -37,4 +56,6 @@
 ### Dummy Scopes
 
 ## Team Rules
+
+## But What About Markup?
 
