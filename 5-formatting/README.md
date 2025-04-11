@@ -4,7 +4,9 @@ Uncle Bob likes his code clean and his ____ dirty. (fill in the blank)
 
 "...a scrambled mass of code that looks like it was written by a bevy of drunken sailors.."
 
-These are just code formatting ideas, and I won't die on a hill for any of them.
+![Big Lebowski](../images/big-lebowski-opinion.jpg)
+
+These are just code formatting opinions, and I won't die on a hill for any of them.
 
 ## The Purpose of Formatting
 
@@ -60,6 +62,8 @@ Since functions and arguments are closely, there are no spaces between the funct
 ### Horizontal Alignment
 
 ### Indentation
+
+Indentation establishes hierarchy in your code.
 
 #### Breaking Indentation
 
