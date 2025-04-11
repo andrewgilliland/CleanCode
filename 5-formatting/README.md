@@ -1,12 +1,22 @@
-# 🧹 Formatting
+# 🎨 Formatting
+
+Uncle Bob likes his code clean and his ____ dirty. (fill in the blank)
 
 "...a scrambled mass of code that looks like it was written by a bevy of drunken sailors.."
 
+These are just code formatting ideas, and I won't die on a hill for any of them.
+
 ## The Purpose of Formatting
+
+The purpose is readability. Readability affects maintainability and extensibility
 
 ## Vertical Formatting
 
+Smaller files are usually easier to understand than a large files. Shoot for 200-500 lines max.
+
 ### The Newspaper Metaphor
+
+Code files should be read from the top down. File names should be simple but explanatory, the names (plus directory structure) should let us know if we are in the right module.
 
 ### Vertical Openness Between Concepts
 
@@ -57,5 +67,57 @@ Since functions and arguments are closely, there are no spaces between the funct
 
 ## Team Rules
 
+Keep it consistent. I don't care if you put an 🍆 at the end of each line, as long as it's consistent.
+
 ## But What About Markup?
+
+## Formatting vs Linting
+
+### Formatting
+
+Formatting is about how your code looks. It's focus is on the style, not the correctness.
+
+Formatting should:
+
+- Fix indentation
+- Adds/removes spaces or line breaks
+- Order imports
+- Enforces consistent styling
+
+Formatting tools:
+
+- PHP: PHP-CS-Fixer (PSR-12), Prettier (with PHP plugin)
+- JavaScript: Prettier
+
+Note: Prettier is a formatter that supports these file types out of the box:
+
+- HTML
+- CSS, Less, and SCSS
+- JavaScript
+- TypeScript
+- JSON
+- YAML
+- Markdown and MDX
+- JSX
+- Angular
+- Vue
+- GraphQL
+- Flow
+- Ember/Handlebars
+
+
+### Linting
+
+Linting is about finding problems in your code. Both syntactic (missing brackets, etc.) and semantics (unused variables, deprecated functions, etc.).
+
+Linting should:
+
+- Detect errors, warnings, or code smells
+- Enforces coding standards or best practices
+- Helps prevent bugs and maintain code quality.
+
+Linting tools:
+
+- PHP: php -l, PHPStan
+- JavaScript: ESLint
 
