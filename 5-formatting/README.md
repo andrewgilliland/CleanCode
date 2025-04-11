@@ -69,9 +69,29 @@ Since functions and arguments are closely, there are no spaces between the funct
 
 Keep it consistent. I don't care if you put an 🍆 at the end of each line, as long as it's consistent.
 
+Automate is as much as possible. Pick tools that best suite your needs for you language and build them into your workflow.
+
 ## But What About Markup?
 
+But Uncle Bob, you didn't talk about formating markup (HTML, XML, Markdown, etc). Keep it simple, endent nested elements into others.
+
+```html
+<div>
+    <section>
+        <div>
+            <h2>This is a Heading</h2>
+            <div>This is a description of a thing. Use your imagination</div>
+        </div>
+    </section>
+    <section>
+        <h2>The next section</h2>  
+    </section>
+</div>
+```
+
 ## Formatting vs Linting
+
+Formatting ensures code looks clean and follows consistent style rules, and linting checks code for errors and potential bugs.
 
 ### Formatting
 
