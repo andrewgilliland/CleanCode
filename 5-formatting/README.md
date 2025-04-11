@@ -18,9 +18,13 @@ Smaller files are usually easier to understand than a large files. Shoot for 200
 
 ### The Newspaper Metaphor
 
-Code files should be read from the top down. File names should be simple but explanatory, the names (plus directory structure) should let us know if we are in the right module.
+Code files should be read from the top down. 
+File names should be simple but explanatory.
+The names (plus directory structure) should let us know if we are in the right module.
 
 ### Vertical Openness Between Concepts
+
+
 
 ### Vertical Density
 
@@ -47,10 +51,10 @@ Horizontal white space can be used for associating things that strongly related.
 With assignment statement, have a space between the left side and the right side.
 
 ```php
-// bad
+// Bad
 $array=[1,2,3,4];
 
-// good
+// Good
 $array = [4,5,6,7];
 ```
 
@@ -65,14 +69,73 @@ Since functions and arguments are closely, there are no spaces between the funct
 
 Indentation establishes hierarchy in your code.
 
+```php
+// Bad
+<?php
+declare(strict_types=1);
+namespace App\Models;
+class User{
+private string $name;private string $email;
+public function __construct(string $name,string $email){$this->name=$name;$this->email=$email;}
+public function getName():string{return $this->name;}
+public function getEmail():string{return $this->email;}
+public function setName(string $name):void{$this->name=$name;}
+public function setEmail(string $email):void{$this->email=$email;}
+}
+```
+
+```php
+// Good
+<?php
+
+declare(strict_types=1);
+
+namespace App\Models;
+
+class User
+{
+    private string $name;
+    private string $email;
+
+    public function __construct(string $name, string $email)
+    {
+        $this->name  = $name;
+        $this->email = $email;
+    }
+
+    public function getName(): string
+    {
+        return $this->name;
+    }
+
+    public function getEmail(): string
+    {
+        return $this->email;
+    }
+
+    public function setName(string $name): void
+    {
+        $this->name = $name;
+    }
+
+    public function setEmail(string $email): void
+    {
+        $this->email = $email;
+    }
+}
+```
+
 #### Breaking Indentation
 
+You may be tempted to not indent with short if statements, while loops, or functions. Don't do it. Just don't.
+
 ### Dummy Scopes
+
+Try to avoid this
 
 ## Team Rules
 
 Keep it consistent. I don't care if you put an 🍆 at the end of each line, as long as it's consistent.
-
 Automate is as much as possible. Pick tools that best suite your needs for you language and build them into your workflow.
 
 ## But What About Markup?
