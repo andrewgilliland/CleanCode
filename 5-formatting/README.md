@@ -106,7 +106,7 @@ Formatting should:
 
 Formatting tools:
 
-- PHP: PHP-CS-Fixer (PSR-12), Prettier (with PHP plugin)
+- PHP: PHP-CS-Fixer ([PSR-12](https://www.php-fig.org/psr/psr-12/)), Prettier (with PHP plugin)
 - JavaScript: Prettier
 
 Note: Prettier is a formatter that supports these file types out of the box:
