@@ -6,7 +6,12 @@ Hiding implementation is about abstractions.
 
 ## Data/Object Anti-Symmetry
 
+- Objects - hide their data behind abstractions and expose functions that operate on that data.
+- Data structures - expose their data and have no meaningful functions.
+
 ## The Law of Demeter
+
+The method should not invoke methods on objects that are returned by any of the allowed functions.
 
 ### Train Wrecks
 
@@ -16,4 +21,8 @@ Hiding implementation is about abstractions.
 
 ## Data Transfer Objects
 
+DTO - A class with public variables and no functions.
+
 ### Active Record
+
+Active records are special forms of DTOs, they have public variables, but have navigational methods like save and find as well.
