@@ -15,7 +15,11 @@ The method should not invoke methods on objects that are returned by any of the 
 
 ### Train Wrecks
 
+Chains of calls generally should be avoided.
+
 ### Hybrids
+
+Hybrid structures that are half object and half data structure should be avoided.
 
 ### Hiding Structure
 
